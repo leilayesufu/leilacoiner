@@ -10,7 +10,7 @@ const homeStore = create((set) => ({
     searched: false,
 
     setQuery: (e)=>{
-        set({query: e.target.value}),
+        set ({query: e.target.value})
         homeStore.getState().searchCoins()
     },
 
